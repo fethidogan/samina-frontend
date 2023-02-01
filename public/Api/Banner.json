@@ -1,0 +1,313 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "type": "fashion",
+            "subtype": "topbanner",
+            "children": [
+                {
+                    "bannerId": 1,
+                    "image": "/assets/images/fashion/banner/1.jpg",
+                    "discount": 26,
+                    "heading": "New Hoodie",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop",
+                    "category": "shirt"
+                },
+                {
+                    "bannerId": 2,
+                    "image": "/assets/images/fashion/banner/2.jpg",
+                    "discount": 50,
+                    "heading": "Women Fashion",
+                    "subHeading": "New offer 50% off",
+                    "link": "/shop",
+                    "category": "kurta"
+                },
+                {
+                    "bannerId": 3,
+                    "image": "/assets/images/fashion/banner/3.jpg",
+                    "discount": 36,
+                    "heading": "New Jacket",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop",
+                    "category": "jacket",
+                    "class": true
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "type": "fashion",
+            "subtype": "newoffer",
+            "leftbanner": {
+                "image": "/assets/images/fashion/banner/4.jpg",
+                "topheadingleft": "New",
+                "topheadingright": "Collections",
+                "heading": "New Red Jacket From",
+                "price": "$48"
+            },
+            "righttopbanner": {
+                "image": "/assets/images/fashion/banner/5.jpg",
+                "title": "New Hoodies from ",
+                "price": "$34",
+                "rightbottom": [
+                    {
+                        "heading": "New Jacket",
+                        "discount": "Discount 70%",
+                        "image": "/assets/images/fashion/banner/6.jpg"
+                    },
+                    {
+                        "heading": "New Jacket",
+                        "discount": "Discount 80%",
+                        "image": "/assets/images/fashion/banner/7.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "type": "fashion",
+            "subtype": "instagramshop",
+            "children": [
+                {
+                    "id": 1,
+                    "image": "/assets/images/fashion/instagram/1.jpg",
+                    "Share": "Share",
+                    "discount": "New Offer -56% Discount",
+                    "title": "Women T-shirt From $35"
+                },
+                {
+                    "id": 2,
+                    "image": "/assets/images/fashion/instagram/2.jpg",
+                    "Share": "Share",
+                    "discount": "New Offer -56% Discount",
+                    "title": "Women T-shirt From $35"
+                },
+                {
+                    "id": 3,
+                    "image": "/assets/images/fashion/instagram/3.jpg",
+                    "Share": "Share",
+                    "discount": "New Offer -56% Discount",
+                    "title": "Women T-shirt From $35"
+                },
+                {
+                    "id": 4,
+                    "image": "/assets/images/fashion/instagram/4.jpg",
+                    "Share": "Share",
+                    "discount": "New Offer -56% Discount",
+                    "title": "Women T-shirt From $35"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "type": "flower",
+            "subtype": "topbanner",
+            "children": [
+                {
+                    "bannerId": 1,
+                    "image": "/assets/images/flower/banner/1.jpg",
+                    "discount": 26,
+                    "heading": "Pink Flower",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop"
+                },
+                {
+                    "bannerId": 2,
+                    "image": "/assets/images/flower/banner/2.jpg",
+                    "discount": 50,
+                    "heading": "Yellow Flower",
+                    "subHeading": "New offer 50% off",
+                    "link": "/shop"
+                },
+                {
+                    "bannerId": 3,
+                    "image": "/assets/images/flower/banner/3.jpg",
+                    "discount": 36,
+                    "heading": "Orange Flower",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop",
+                    "class": true
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "type": "flower",
+            "subtype": "newoffer",
+            "leftbanner": {
+                "image": "/assets/images/flower/offer/big.jpg",
+                "topheadingleft": "New",
+                "topheadingright": "Collections",
+                "heading": "New Red Flowers From",
+                "price": "$48"
+            },
+            "righttopbanner": {
+                "image": "/assets/images/flower/offer/1.jpg",
+                "title": "New Flowers from ",
+                "price": "$34",
+                "rightbottom": [
+                    {
+                        "heading": "New Rose",
+                        "discount": "Discount 70%",
+                        "image": "/assets/images/flower/offer/2.jpg"
+                    },
+                    {
+                        "heading": "New Lotus",
+                        "discount": "Discount 80%",
+                        "image": "/assets/images/flower/offer/3.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "type": "flower",
+            "subtype": "deal",
+            "leftimage": "/assets/images/flower/offer-1/2.png",
+            "rightimage": "/assets/images/flower/offer-1/1.png",
+            "lefthead": "Shop Now",
+            "leftsubhead": "BUY ONE GET ONE FREE",
+            "mainhead1": "Special Discount ",
+            "offer": "70% OFF",
+            "mainhead2": "Deal Of The Day ",
+            "mainhead3": "form ",
+            "price": "$75"
+        },
+        {
+            "id": 7,
+            "type": "flower",
+            "subtype": "newupdate",
+            "children": [
+                {
+                    "id": 1,
+                    "image": "/assets/images/flower/new/1.jpg",
+                    "date": 16,
+                    "month": "MAY",
+                    "title": "Flowers",
+                    "discount": "New Offer 56% Discount",
+                    "fresh": "Fresh",
+                    "pricetitle": "Latest Night Lamp From $35",
+                    "btn": "Read More"
+                },
+                {
+                    "id": 2,
+                    "image": "/assets/images/flower/new/2.jpg",
+                    "date": 26,
+                    "month": "JUNE",
+                    "title": "Flowers",
+                    "discount": "New Offer 56% Discount",
+                    "fresh": "Fresh",
+                    "pricetitle": "Latest Night Lamp From $35",
+                    "btn": "Read More"
+                },
+                {
+                    "id": 3,
+                    "image": "/assets/images/flower/new/3.jpg",
+                    "date": 6,
+                    "month": "JULY",
+                    "title": "Flowers",
+                    "discount": "New Offer 56% Discount",
+                    "fresh": "Fresh",
+                    "pricetitle": "Latest Night Lamp From $35",
+                    "btn": "Read More"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "type": "furniture",
+            "subtype": "topbanner",
+            "children": [
+                {
+                    "bannerId": 1,
+                    "image": "/assets/images/furniture-images/banner/1.jpg",
+                    "discount": 26,
+                    "off": "OFF",
+                    "price": "$59.00",
+                    "delprice": "$65.00",
+                    "heading": "SHOP NOW",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop"
+                },
+                {
+                    "bannerId": 2,
+                    "image": "/assets/images/furniture-images/banner/2.jpg",
+                    "discount": 66,
+                    "off": "OFF",
+                    "price": "$69.00",
+                    "delprice": "$95.00",
+                    "heading": "SHOP NOW",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop"
+                },
+                {
+                    "bannerId": 3,
+                    "image": "/assets/images/furniture-images/banner/3.jpg",
+                    "discount": 96,
+                    "off": "OFF",
+                    "price": "$89.00",
+                    "delprice": "$95.00",
+                    "heading": "SHOP NOW",
+                    "subHeading": "BUY ONE GET ONE FREE",
+                    "link": "/shop"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "type": "furniture",
+            "subtype": "deal",
+            "image": "/assets/images/furniture-images/deal/1.png",
+            "lefthead": "Shop Now",
+            "leftsubhead": "BUY ONE GET ONE FREE",
+            "mainhead1": "Special Discount ",
+            "offer": "70% OFF",
+            "mainhead2": "Deal Of The Day ",
+            "mainhead3": "form ",
+            "price": "$75"
+        },
+        {
+            "id": 10,
+            "type": "furniture",
+            "subtype": "instagramshop",
+            "children": [
+                {
+                    "id": 1,
+                    "image": "furniture-images/shop/1.png",
+                    "heading": "Decoretion",
+                    "discount": "New Offer 56% Discount",
+                    "title": "Latest Night Lamp From $35"
+                },
+                {
+                    "id": 2,
+                    "image": "furniture-images/shop/2.png",
+                    "heading": "Decoretion",
+                    "discount": "New Offer 86% Discount",
+                    "title": "Latest Night Lamp From $35"
+                },
+                {
+                    "id": 3,
+                    "image": "furniture-images/shop/3.png",
+                    "heading": "Decoretion",
+                    "discount": "New Offer 86% Discount",
+                    "title": "Latest Night Lamp From $35"
+                },
+                {
+                    "id": 4,
+                    "image": "furniture-images/shop/4.png",
+                    "heading": "Decoretion",
+                    "discount": "New Offer 86% Discount",
+                    "title": "Latest Night Lamp From $35"
+                },
+                {
+                    "id": 5,
+                    "image": "furniture-images/shop/1.png",
+                    "heading": "Decoretion",
+                    "discount": "New Offer 56% Discount",
+                    "title": "Latest Night Lamp From $35"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+[
+    {
+        "title": "About us",
+        "subMenu": [
+            {
+                "id": 1,
+                "menu": "Home",
+                "url": ""
+            },
+            {
+                "id": 2,
+                "menu": "Shop",
+                "url": ""
+            },
+            {
+                "id": 3,
+                "menu": "About Us",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "menu": "Blog",
+                "url": ""
+            },
+            {
+                "id": 5,
+                "menu": "Contact",
+                "url": ""
+            }
+        ]
+    },
+    {
+        "title": "New Categories",
+        "subMenu": [
+            {
+                "id": 1,
+                "menu": "Latest Shoes",
+                "url": ""
+            },
+            {
+                "id": 2,
+                "menu": "Branded Jeans",
+                "url": ""
+            },
+            {
+                "id": 3,
+                "menu": "New Jackets",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "menu": "Colorfull Hoodies",
+                "url": ""
+            },
+            {
+                "id": 5,
+                "menu": "Shiner Goggles",
+                "url": ""
+            }
+        ]
+    },
+    {
+        "title": "Get Help",
+        "subMenu": [
+            {
+                "id": 1,
+                "menu": "Your Orders",
+                "url": ""
+            },
+            {
+                "id": 2,
+                "menu": "Your Account",
+                "url": ""
+            },
+            {
+                "id": 3,
+                "menu": "Track Orders",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "menu": "Your Wishlist",
+                "url": ""
+            },
+            {
+                "id": 5,
+                "menu": "Shopping FAQs",
+                "url": ""
+            }
+        ]
+    }
+]

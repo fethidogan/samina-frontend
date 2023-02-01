@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "title": "Raw Ham Colorblock T-shirt",
+        "review": "5040 Review",
+        "contain": "The international hoodies with excellent durable fabric, not to heavy but simply PERFECT for Indian summer.",
+        "price": "$49.55 ",
+        "Size": [
+            "S",
+            "M",
+            "L",
+            "L",
+            "XL"
+        ],
+        "Color": [
+            "Black",
+            "White",
+            "Blue",
+            "Gray"
+        ],
+        "Qty": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "cart": "Add to cart",
+        "share": "share with",
+        "social": [
+            {
+                "link": "https://www.facebook.com/sharer/sharer.php?u=#url",
+                "src": "/assets/images/social-icon/4.png"
+            },
+            {
+                "link": "https://www.google.co.in/",
+                "src": "/assets/images/social-icon/5.png"
+            },
+            {
+                "link": "http://www.twitter.com/share",
+                "src": "/assets/images/social-icon/6.png"
+            }
+        ],
+        "mainImg": "/assets/images/fashion/slider/1.jpg",
+        "Sale": "Sale",
+        "offer": "70% OFF",
+        "New": "New Tranding Fashion",
+        "buy": "BUY ONE GET ONE ",
+        "free": "FREE",
+        "Discover": "Discover",
+        "Collection": "Our Collection"
+    },
+    {
+        "id": 2,
+        "title": "Raw Ham Colorblock T-shirt",
+        "review": "5040 Review",
+        "contain": "The international hoodies with excellent durable fabric, not to heavy but simply PERFECT for Indian summer.",
+        "price": "$49.55 ",
+        "Size": [
+            "S",
+            "M",
+            "L",
+            "L",
+            "XL"
+        ],
+        "Color": [
+            "Black",
+            "White",
+            "Blue",
+            "Gray"
+        ],
+        "Qty": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "cart": "Add to cart",
+        "share": "share with",
+        "social": [
+            {
+                "link": "https://www.facebook.com/sharer/sharer.php?u=#url",
+                "src": "/assets/images/social-icon/4.png"
+            },
+            {
+                "link": "https://www.google.co.in/",
+                "src": "/assets/images/social-icon/5.png"
+            },
+            {
+                "link": "http://www.twitter.com/share",
+                "src": "/assets/images/social-icon/6.png"
+            }
+        ],
+        "mainImg": "/assets/images/fashion/slider/2.jpg",
+        "Sale": "Sale",
+        "offer": "70% OFF",
+        "New": "New Tranding Fashion",
+        "buy": "BUY ONE GET ONE ",
+        "free": "FREE",
+        "Discover": "Discover",
+        "Collection": "Our Collection"
+    },
+    {
+        "id": 3,
+        "title": "Raw Ham Colorblock T-shirt",
+        "review": "5040 Review",
+        "contain": "The international hoodies with excellent durable fabric, not to heavy but simply PERFECT for Indian summer.",
+        "price": "$49.55 ",
+        "Size": [
+            "S",
+            "M",
+            "L",
+            "L",
+            "XL"
+        ],
+        "Color": [
+            "Black",
+            "White",
+            "Blue",
+            "Gray"
+        ],
+        "Qty": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "cart": "Add to cart",
+        "share": "share with",
+        "social": [
+            {
+                "link": "https://www.facebook.com/sharer/sharer.php?u=#url",
+                "src": "/assets/images/social-icon/4.png"
+            },
+            {
+                "link": "https://www.google.co.in/",
+                "src": "/assets/images/social-icon/5.png"
+            },
+            {
+                "link": "http://www.twitter.com/share",
+                "src": "/assets/images/social-icon/6.png"
+            }
+        ],
+        "mainImg": "/assets/images/fashion/slider/1.jpg",
+        "Sale": "Sale",
+        "offer": "70% OFF",
+        "New": "New Tranding Fashion",
+        "buy": "BUY ONE GET ONE ",
+        "free": "FREE",
+        "Discover": "Discover",
+        "Collection": "Our Collection"
+    }
+]

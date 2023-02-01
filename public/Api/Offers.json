@@ -1,0 +1,1038 @@
+{
+    "data": [
+        {
+            "type": "furniture",
+            "subtype": "hurryup",
+            "tabs": [
+                {
+                    "name": "Lamps",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Sofa-set",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Tables",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Mixer",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Chair",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Beds",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Window",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 3,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "furniture-images/special-offer/a1.png",
+                            "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 5,
+                                    "image": "furniture-images/special-offer/1.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 4,
+                                    "image": "furniture-images/special-offer/2.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Latest Yellow Sofa Furniture Fully Comfortable",
+                                    "ratingstars": 2,
+                                    "image": "furniture-images/special-offer/3.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "electronic",
+            "subtype": "hurryup",
+            "tabs": [
+                {
+                    "name": "Camera",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Camera",
+                    "displayTitle": "Camera",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up !!!!",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/9.png"
+                                },
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Audio",
+                    "active": false,
+                    "linkId": "audio-tab",
+                    "target": "#Audio",
+                    "displayTitle": "Audio",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Navigation",
+                    "active": false,
+                    "linkId": "navigation-tab",
+                    "target": "#Navigation",
+                    "displayTitle": "Navigation",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                },
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "others",
+                    "active": true,
+                    "linkId": "other-tab",
+                    "target": "#Others",
+                    "displayTitle": "others",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                },
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "phones",
+                    "active": false,
+                    "linkId": "phones-tab",
+                    "target": "#Phones",
+                    "displayTitle": "phones",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                },
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/10.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Computer",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Computer",
+                    "displayTitle": "Computer",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Accesories",
+                    "active": false,
+                    "linkId": "camera-tab",
+                    "target": "#Accesories",
+                    "displayTitle": "Accesories",
+                    "children": [
+                        {
+                            "childtype": "leftbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$58.00",
+                                    "price": "$25.00",
+                                    "title": "Digital Unisex Watch",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/11.png"
+                                },
+                                {
+                                    "mrp": "$50.00",
+                                    "price": "$30.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 4,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$60.00",
+                                    "price": "$52.00",
+                                    "title": "16MP 4K HD Action Waterproof Camera",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/8.png"
+                                }
+                            ]
+                        },
+                        {
+                            "childtype": "middlebanner",
+                            "price": "$49",
+                            "mrp": "$52",
+                            "lefttag": "New",
+                            "righttag": "50% off",
+                            "heading": "Hurry Up",
+                            "subheading": "Offer Expires in 02 HOurs",
+                            "image": "electronics/product/png/14.png",
+                            "title": "Bluetooth Wireless Earphones(black)",
+                            "ratingstars": 2
+                        },
+                        {
+                            "childtype": "rightbanners",
+                            "banners": [
+                                {
+                                    "mrp": "$1068.00",
+                                    "price": "$1000.00",
+                                    "title": "Full HD Indoor WiFi Spy Security Camera",
+                                    "ratingstars": 2,
+                                    "image": "electronics/product/png/10.png"
+                                },
+                                {
+                                    "mrp": "$90.00",
+                                    "price": "$78.00",
+                                    "title": "White dial Wrist Watch",
+                                    "ratingstars": 5,
+                                    "image": "electronics/product/png/12.png"
+                                },
+                                {
+                                    "mrp": "$850.00",
+                                    "price": "$700.00",
+                                    "title": "Smart Security Camera (White)",
+                                    "ratingstars": 3,
+                                    "image": "electronics/product/png/13.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
