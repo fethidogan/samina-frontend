@@ -15,7 +15,7 @@ const Order_tracking = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' type='image/x-icon' href={`${CommonPath}/favicon/2.png`} />
       </Head>
-      <BreadCrumb parent={'Order Tracking'} title={'Order Tracking'} />
+      {/* <BreadCrumb parent={'Order Tracking'} title={'Order Tracking'} /> */}
       <OrderTracking />
       <FlowerSubscribe />
     </Layout1>

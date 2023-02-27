@@ -10,11 +10,11 @@ const ThemeCustomizer = () => {
     <>
       <div className='theme-setting'>
         <ul>
-          <li className='copy-box' onClick={() => dispatch({ type: 'CONFIGMODAL' })}>
+          {/* <li className='copy-box' onClick={() => dispatch({ type: 'CONFIGMODAL' })}>
             <Copy />
-          </li>
+          </li> */}
           <DarkLight />
-          <Direction />
+          {/* <Direction /> */}
           <ColorSelect />
         </ul>
       </div>

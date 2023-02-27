@@ -15,7 +15,7 @@ const Error = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' type='image/x-icon' href={`${CommonPath}/favicon/2.png`} />
       </Head>
-      <BreadCrumb parent={'404'} title={'404'} />
+      {/* <BreadCrumb parent={'404'} title={'404'} /> */}
       <SectionSvg />
       <FlowerSubscribe />
     </Layout1>

@@ -14,7 +14,7 @@ const MobileViewBtn = () => {
         width < 1200 && dispatch({ type: 'ISDASHBOARD' });
         dispatch({ type: 'OVERLAY' });
       }}>
-      <Btn attrBtn={{ className: 'btn-solid-default btn-sm fw-bold filter-btn' }}>{ShowMenu}</Btn>
+      <Btn attrBtn={{ className: 'btn-solid-default btn-sm fw-bold filter-btn' }}>Show Menu</Btn>
     </div>
   );
 };

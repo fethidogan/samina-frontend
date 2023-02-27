@@ -5,51 +5,125 @@ import { CommonPath } from '../../Constant';
 import AccountInformation from './AccountInformation';
 
 const DashBoardContain = () => {
-  const DashboardFilter = UserDashboardData.filter((el) => el.type === 'Dashboard');
+
   return (
     <div className='dashboard-right'>
-      {DashboardFilter.map((el) => {
-        return el.tabs.map((elem, i) => {
-          return (
-            <div className='dashboard' key={i}>
-              <div className='page-title title title1 title-effect'>
-                <h2>{elem.title}</h2>
-              </div>
-              <div className='welcome-msg'>
-                <h6 className='font-light'>
-                  {elem.greet}
-                  <span>{elem.name}</span>
-                </h6>
-                <p className='font-light'>{elem.description}</p>
-              </div>
+      <div className='dashboard'>
+        <div className='page-title title title1 title-effect'>
+          <h2>My Dashboard</h2>
+        </div>
+        <div className='welcome-msg'>
+          <h6 className='font-light'>
+            Hello <span>Samina</span>
+          </h6>
+          <p className='font-light'>In this dashboard you can see your short information about your account.</p>
+        </div>
 
-              <div className='order-box-contain my-4'>
-                <Row className='g-4'>
-                  {elem.orders.map((item, i) => {
-                    return (
-                      <Col lg='4' sm='6' key={i}>
-                        <div className='order-box'>
-                          <div className='order-box-image'>
-                            <img src={`${CommonPath}/${item.image1}`} className='img-fluid' alt='order' />
-                          </div>
-                          <div className='order-box-contain'>
-                            <img src={`${CommonPath}/${item.image2}`} className='img-fluid' alt='box' />
-                            <div>
-                              <h5 className='font-light'>{item.title}</h5>
-                              <h3>{item.num}</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </Col>
-                    );
-                  })}
-                </Row>
+        <div className='order-box-contain my-4'>
+          <Row className='g-4'>
+            {/* Pending orders */}
+            <Col lg='4' sm='6' >
+              <div className='order-box'>
+                <div className='order-box-image'>
+                  <img src={`/assets/images/svg/box.png`} className='img-fluid' alt='order' />
+                </div>
+                <div className='order-box-contain'>
+                  <img src={`/assets/images/svg/box1.png`} className='img-fluid' alt='box' />
+                  <div>
+                    <h5 className='font-light'>Pending Orders</h5>
+                    <h3>13</h3>
+                  </div>
+                </div>
               </div>
-              <AccountInformation elem={elem} />
-            </div>
-          );
-        });
-      })}
+            </Col>
+
+            {/* Completed orders */}
+            <Col lg='4' sm='6' >
+              <div className='order-box'>
+                <div className='order-box-image'>
+                  <img src={`/assets/images/svg/sent.png`} className='img-fluid' alt='order' />
+                </div>
+                <div className='order-box-contain'>
+                  <img src={`/assets/images/svg/sent1.png`} className='img-fluid' alt='box' />
+                  <div>
+                    <h5 className='font-light'>Sent Orders</h5>
+                    <h3>13</h3>
+                  </div>
+                </div>
+              </div>
+            </Col>
+
+            {/* Wishlist */}
+            <Col lg='4' sm='6' >
+              <div className='order-box'>
+                <div className='order-box-image'>
+                  <img src={`/assets/images/svg/wishlist.png`} className='img-fluid' alt='order' />
+                </div>
+                <div className='order-box-contain'>
+                  <img src={`/assets/images/svg/wishlist1.png`} className='img-fluid' alt='box' />
+                  <div>
+                    <h5 className='font-light'>Wishlist</h5>
+                    <h3>17</h3>
+                  </div>
+                </div>
+              </div>
+            </Col>
+
+          </Row>
+        </div>
+        <div className='box-account box-info'>
+          <div className='box-head'>
+            <h3>Account Information</h3>
+          </div>
+          <Row>
+            <Col lg="6" sm='12'>
+              <div className='box'>
+                <div className='box-title'>
+                  <h4>Contact Information</h4>
+                </div>
+                <div className='box-content'>
+                  <div>
+                    <p className='font-light' style={{ fontSize: "16px" }}>Full Name</p>
+                    <p style={{ fontSize: "16px" }}>John Doe</p>
+                  </div>
+
+                  <div className='mt-3'>
+                    <p className='font-light' style={{ fontSize: "16px" }}>Email Address</p>
+                    <p style={{ fontSize: "16px" }}>johndoe@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+
+            <Col lg="6" sm='12'>
+              <div className='box'>
+                <div className='box-title'>
+                  <h4>Address Information</h4>
+                </div>
+                <div className='box-content'>
+                  <div className='mt-3'>
+                    <p className='font-light' style={{ fontSize: "16px" }}>Country</p>
+                    <p style={{ fontSize: "16px" }}>United States</p>
+                  </div>
+                  <div className='mt-3'>
+                    <p className='font-light' style={{ fontSize: "16px" }}>City</p>
+                    <p style={{ fontSize: "16px" }}>Florida</p>
+                  </div>
+                  <div className='mt-3'>
+                    <p className='font-light' style={{ fontSize: "16px" }}>Zip Code</p>
+                    <p style={{ fontSize: "16px" }}>1234</p>
+                  </div>
+                  <div className='mt-3'>
+                    <p className='font-light' style={{ fontSize: "16px" }}>Address</p>
+                    <p style={{ fontSize: "16px" }}>Sample street xyz district </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+        {/* <AccountInformation elem={elem} /> */}
+      </div>
     </div>
   );
 };

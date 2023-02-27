@@ -1,52 +1,94 @@
 import Link from 'next/link';
-import React from 'react';
-import { Col, Input, Row } from 'reactstrap';
-import { Btn } from '../../AbstractElements';
-import { Alreadyhaveanaccount, Facebook, Google, Orsignupwith, Registers, SignUp } from '../../Constant';
+import React, { useState } from 'react';
+import { Button, Form, Input } from 'reactstrap';
+
 
 const RegisterSection = () => {
+  // STATES
+  const [fullName, setFullName] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
+
+  // REGİSTER REQUEST
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div className='login-section'>
       <div className='materialContainer'>
         <div className='box'>
           <div className='login-title'>
-            <h2>{Registers}</h2>
+            <h2>Register</h2>
           </div>
 
-          <div className='input'>
-            <Input placeholder='Name' type='text' name='name' id='name' />
-            <span className='spin'></span>
-          </div>
+          <Form onSubmit={handleSubmit}>
+            <div className='input'>
+              <Input
+                placeholder='Full Name'
+                type='text'
+                name='name'
+                id='name'
+                required
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+              />
+              <span className='spin'></span>
+            </div>
 
-          <div className='input'>
-            <Input type='text' name='name' id='emailname' placeholder='EmailAddress' />
-            <span className='spin'></span>
-          </div>
+            <div className='input'>
+              <Input
+                type='text'
+                name='name'
+                id='emailname'
+                placeholder='Email'
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <span className='spin'></span>
+            </div>
 
-          <div className='input'>
-            <Input type='password' name='pass' id='pass' placeholder='Password' />
-            <span className='spin'></span>
-          </div>
+            <div className='input'>
+              <Input
+                type='password'
+                name='pass'
+                id='pass'
+                placeholder='Password'
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <span className='spin'></span>
+            </div>
 
-          <div className='input'>
-            <Input type='password' name='pass' id='compass' placeholder='ConfirmPassword' />
-            <span className='spin'></span>
-          </div>
+            <div className='input'>
+              <Input
+                type='password'
+                name='pass'
+                id='compass'
+                placeholder='Confirm Password'
+                required
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+              <span className='spin'></span>
+            </div>
 
-          <div className='button login'>
-            <Btn>
-              <span>{SignUp}</span>
-              <i className='fa fa-check'></i>
-            </Btn>
-          </div>
+            <div className='button login'>
+              <Button type='submit'>Sign Up</Button>
+            </div>
+          </Form>
 
-          <p className='sign-category'>
+          {/* Google and facebook signup */}
+          {/* <p className='sign-category'>
             <span>{Orsignupwith}</span>
-          </p>
+          </p> */}
 
-          <Row className='gx-md-3 gy-3'>
+          {/* <Row className='gx-md-3 gy-3'>
             <Col md='6'>
-              <a href='www.facebook.com'>
+            <a href='www.facebook.com'>
                 <div className='social-media fb-media'>
                   <img src='/assets/images/inner-page/facebook.png' className='img-fluid' alt='facebook' />
                   <h6>{Facebook}</h6>
@@ -61,10 +103,10 @@ const RegisterSection = () => {
                 </div>
               </a>
             </Col>
-          </Row>
+          </Row> */}
           <p>
             <Link href={'/page/login'} className='theme-color'>
-              {Alreadyhaveanaccount}
+              Already have an account ? Login
             </Link>
           </p>
         </div>

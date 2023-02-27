@@ -11,6 +11,7 @@ const UserNav = () => {
   const { isDashboard } = useSelector((state) => state.ModalReducer);
   const [num, setNum] = useState(1);
   const { width } = useWindowDimensions();
+  
   const toggle = (id) => {
     width < 992 && dispatch({ type: 'OVERLAY' });
     if (activeTab !== id) {
@@ -20,6 +21,7 @@ const UserNav = () => {
     }
     setNum(id);
   };
+
   return (
     <Fragment>
       <Col lg='3'>

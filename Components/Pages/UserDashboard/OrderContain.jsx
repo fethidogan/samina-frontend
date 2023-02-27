@@ -8,7 +8,7 @@ const OrderContain = () => {
   return (
     <Fragment>
       <div className='box-head mb-3'>
-        <h3>{MyOrder}</h3>
+        <h3>My Orders</h3>
       </div>
       <div className='table-responsive'>
         <DataTables data={headDashboardData} columns={headDashboardColumn} />
