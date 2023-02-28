@@ -8,9 +8,15 @@ import { Col, Container, Row } from 'reactstrap';
 import DashBoardContain from '../../Components/Pages/UserDashboard/DashBoardContain';
 import LeftNavigation from '../../Components/Pages/UserDashboard/LeftNavigation';
 import { useRouter } from 'next/router';
+import axios from 'axios';
+import { baseURL } from '../../constants/baseurl';
 
 
-const UserDashboard = () => {
+const UserDashboard = ({
+  fullName, email, address,
+  country, city, zipCode,
+  processing, delivered, numberOfWishlist
+}) => {
   // ROUTER
   const router = useRouter()
 
@@ -32,7 +38,17 @@ const UserDashboard = () => {
             {/* RİGHT */}
             <Col lg='9'>
               <MobileViewBtn />
-              <DashBoardContain />
+              <DashBoardContain
+                fullName={fullName}
+                email={email}
+                address={address}
+                country={country}
+                city={city}
+                zipCode={zipCode}
+                processing={processing}
+                delivered={delivered}
+                numberOfWishlist={numberOfWishlist}
+              />
             </Col>
 
           </Row>
@@ -53,12 +69,26 @@ export async function getServerSideProps({ locale, query, req }) {
       }
     }
   }
+
+  // fetch user data from server
+  const { data } = await axios.get(`${baseURL}/user/get-user-info`, { headers: { "Authorization": `Bearer ${req.cookies.token}` } })
+  const dashboardResp = await axios.get(`${baseURL}/user/get-user-dashboard-numbers`, { headers: { "Authorization": `Bearer ${req.cookies.token}` } })
+  console.log(dashboardResp.data)
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common']))
+      ...(await serverSideTranslations(locale, ['common'])),
+      fullName: data.fullName,
+      email: data.email,
+      address: data.address,
+      country: data.country.name,
+      city: data.city.name,
+      zipCode: data.zipCode,
+      processing: dashboardResp.data.message.processing,
+      delivered: dashboardResp.data.message.delivered,
+      numberOfWishlist: dashboardResp.data.message.numberOfWishlist,
+
     },
   }
 }
-
 
 export default UserDashboard;

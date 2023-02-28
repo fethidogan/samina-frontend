@@ -4,7 +4,11 @@ import { UserDashboardData } from '../../../Data/UserDashboardData';
 import { CommonPath } from '../../Constant';
 import AccountInformation from './AccountInformation';
 
-const DashBoardContain = () => {
+const DashBoardContain = ({
+  fullName, email, address,
+  country, city, zipCode,
+  processing, delivered, numberOfWishlist
+}) => {
 
   return (
     <div className='dashboard-right'>
@@ -14,7 +18,7 @@ const DashBoardContain = () => {
         </div>
         <div className='welcome-msg'>
           <h6 className='font-light'>
-            Hello <span>Samina</span>
+            Hello <span>{fullName}</span>
           </h6>
           <p className='font-light'>In this dashboard you can see your short information about your account.</p>
         </div>
@@ -31,7 +35,7 @@ const DashBoardContain = () => {
                   <img src={`/assets/images/svg/box1.png`} className='img-fluid' alt='box' />
                   <div>
                     <h5 className='font-light'>Pending Orders</h5>
-                    <h3>13</h3>
+                    <h3>{processing}</h3>
                   </div>
                 </div>
               </div>
@@ -47,7 +51,7 @@ const DashBoardContain = () => {
                   <img src={`/assets/images/svg/sent1.png`} className='img-fluid' alt='box' />
                   <div>
                     <h5 className='font-light'>Sent Orders</h5>
-                    <h3>13</h3>
+                    <h3>{delivered}</h3>
                   </div>
                 </div>
               </div>
@@ -63,7 +67,7 @@ const DashBoardContain = () => {
                   <img src={`/assets/images/svg/wishlist1.png`} className='img-fluid' alt='box' />
                   <div>
                     <h5 className='font-light'>Wishlist</h5>
-                    <h3>17</h3>
+                    <h3>{numberOfWishlist}</h3>
                   </div>
                 </div>
               </div>
@@ -84,12 +88,12 @@ const DashBoardContain = () => {
                 <div className='box-content'>
                   <div>
                     <p className='font-light' style={{ fontSize: "16px" }}>Full Name</p>
-                    <p style={{ fontSize: "16px" }}>John Doe</p>
+                    <p style={{ fontSize: "16px" }}>{fullName}</p>
                   </div>
 
                   <div className='mt-3'>
                     <p className='font-light' style={{ fontSize: "16px" }}>Email Address</p>
-                    <p style={{ fontSize: "16px" }}>johndoe@gmail.com</p>
+                    <p style={{ fontSize: "16px" }}>{email}</p>
                   </div>
                 </div>
               </div>
@@ -103,19 +107,19 @@ const DashBoardContain = () => {
                 <div className='box-content'>
                   <div className='mt-3'>
                     <p className='font-light' style={{ fontSize: "16px" }}>Country</p>
-                    <p style={{ fontSize: "16px" }}>United States</p>
+                    <p style={{ fontSize: "16px" }}>{country ? country : "Not specified"}</p>
                   </div>
                   <div className='mt-3'>
                     <p className='font-light' style={{ fontSize: "16px" }}>City</p>
-                    <p style={{ fontSize: "16px" }}>Florida</p>
+                    <p style={{ fontSize: "16px" }}>{city ? city : "Not specified"}</p>
                   </div>
                   <div className='mt-3'>
                     <p className='font-light' style={{ fontSize: "16px" }}>Zip Code</p>
-                    <p style={{ fontSize: "16px" }}>1234</p>
+                    <p style={{ fontSize: "16px" }}>{zipCode ? zipCode : "Not specified"}</p>
                   </div>
                   <div className='mt-3'>
                     <p className='font-light' style={{ fontSize: "16px" }}>Address</p>
-                    <p style={{ fontSize: "16px" }}>Sample street xyz district </p>
+                    <p style={{ fontSize: "16px" }}>{address ? address : "Not specified"}</p>
                   </div>
                 </div>
               </div>

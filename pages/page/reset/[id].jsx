@@ -72,7 +72,8 @@ const ResetPassword = ({ id }) => {
                     value={password}
                     minLength={8}
                     required
-                    onChange={(e) => setPassword(e.target.value)} />
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
                 </div>
 
 

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { CommonPath } from '../../Components/Constant';
 import Layout1 from '../../Layout/Layout1';
@@ -7,20 +7,51 @@ import MobileViewBtn from '../../Components/Pages/UserDashboard/MobileViewBtn';
 import { Col, Container, Row, Button, Input, FormGroup } from 'reactstrap';
 import LeftNavigation from '../../Components/Pages/UserDashboard/LeftNavigation';
 import { useRouter } from 'next/router';
+import { Country, State, City } from 'country-state-city';
+import Select from "react-select";
+import axios from 'axios';
+import { baseURL } from '../../constants/baseurl';
 
-export const getStaticProps = async ({ locale }) => ({ props: { ...(await serverSideTranslations(locale, ['common'])) } });
 
-const AccountSettings = () => {
+const AccountSettings = ({ fullNameData, addressData, cityData, countryData, zip, phone, token }) => {
   // ROUTER
   const router = useRouter()
 
   // STATES
-  const [country, setCountry] = useState("")
-  const [city, setCity] = useState("")
-  const [address, setAddress] = useState("")
-  const [phoneNumber, setPhoneNumber] = useState("")
-  const [zipCode, setZipCode] = useState("")
-  const [fullName, setFullName] = useState("")
+  const [country, setCountry] = useState(countryData)
+  const [city, setCity] = useState(cityData)
+  const [address, setAddress] = useState(addressData)
+  const [phoneNumber, setPhoneNumber] = useState(phone)
+  const [zipCode, setZipCode] = useState(zip)
+  const [fullName, setFullName] = useState(fullNameData)
+  const [loading, setLoading] = useState(false)
+
+
+  useEffect(() => {
+    setCity(State.getStatesOfCountry(country.isoCode)[0]);
+  }, [country])
+
+
+  // Save Changes
+  const handleSaveChanges = async () => {
+    setLoading(true)
+    try {
+      await axios.post(`${baseURL}/user/change-user-info`,
+        {
+          fullName: fullName,
+          phoneNumber: phoneNumber,
+          address: address,
+          country: country,
+          zipCode: zipCode,
+          city: city,
+        },
+        { headers: { "Authorization": `Bearer ${token}` } })
+      router.reload()
+    } catch (error) {
+      setLoading(false)
+      console.log(error)
+    }
+  }
 
   return (
     <Layout1>
@@ -46,26 +77,38 @@ const AccountSettings = () => {
                 <Row>
                   <Col lg="4">
                     <FormGroup>
-                      <Input type="select" name="country" id="country" defaultValue="country" style={{ backgroundColor: "white" }}>
-                        <option selected>Country</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </Input>
+                      <Select
+                        options={Country.getAllCountries()}
+                        getOptionLabel={(options) => {
+                          return options["name"];
+                        }}
+                        getOptionValue={(options) => {
+                          return options["name"];
+                        }}
+                        value={country}
+                        onChange={(item) => {
+
+                          setCountry(item);
+                        }}
+                      />
                     </FormGroup>
                   </Col>
                   <Col lg="4">
                     <FormGroup>
-                      <Input type="select" name="city" id="city" defaultValue="city" style={{ backgroundColor: "white" }}>
-                        <option selected>City</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </Input>
+                      <Select
+                        options={State.getStatesOfCountry(country.isoCode)}
+                        getOptionLabel={(options) => {
+                          return options["name"];
+                        }}
+                        getOptionValue={(options) => {
+                          return options["name"];
+                        }}
+                        value={city}
+                        onChange={(item) => {
+                          console.log(item)
+                          setCity(item);
+                        }}
+                      />
                     </FormGroup>
                   </Col>
                 </Row>
@@ -78,6 +121,8 @@ const AccountSettings = () => {
                   name='address'
                   id='address'
                   required
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
                 />
                 <span className='spin'></span>
                 <div className='valid-feedback'>Address</div>
@@ -92,6 +137,8 @@ const AccountSettings = () => {
                       name='phone'
                       id='phone'
                       required
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                   </Col>
                   <Col lg="4" className='mb-2'>
@@ -101,6 +148,8 @@ const AccountSettings = () => {
                       name='phone'
                       id='phone'
                       required
+                      value={zipCode}
+                      onChange={(e) => setZipCode(e.target.value)}
                     />
                   </Col>
                   <Col lg="4" className='mb-2'>
@@ -110,13 +159,19 @@ const AccountSettings = () => {
                       name='name'
                       id='name'
                       required
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
                     />
                   </Col>
                 </Row>
               </div>
 
               <div className='d-flex justify-content-end mt-2'>
-                <Button className='btn btn-success'>Save Account Settings</Button>
+                <Button
+                  className='btn btn-success'
+                  onClick={() => handleSaveChanges()}
+                  disabled={loading}
+                >Save Account Settings</Button>
               </div>
 
             </Col>
@@ -129,5 +184,32 @@ const AccountSettings = () => {
     </Layout1>
   );
 };
+
+export async function getServerSideProps({ locale, query, req }) {
+  // if token exists redirect into homepage
+  if (!req.cookies.token) {
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/"
+      }
+    }
+  }
+
+  // fetch user data from server
+  const { data } = await axios.get(`${baseURL}/user/get-user-info`, { headers: { "Authorization": `Bearer ${req.cookies.token}` } })
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      fullNameData: data.fullName,
+      addressData: data.address,
+      countryData: data.country,
+      phone: data.phoneNumber,
+      cityData: data.city,
+      zip: data.zipCode,
+      token: req.cookies.token
+    },
+  }
+}
 
 export default AccountSettings;

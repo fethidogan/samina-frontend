@@ -7,16 +7,38 @@ import MobileViewBtn from '../../Components/Pages/UserDashboard/MobileViewBtn';
 import { Col, Container, Row, Button, Table, Input, FormGroup, Label, Form } from 'reactstrap';
 import LeftNavigation from '../../Components/Pages/UserDashboard/LeftNavigation';
 import { useRouter } from 'next/router';
+import axios from 'axios';
+import { baseURL } from '../../constants/baseurl';
+import { toast } from 'react-toastify';
+import { Country, State, City }  from 'country-state-city';
 
 
-
-const UserNotifications = () => {
+const UserNotifications = ({ discountEmails, productsMayInterested, token }) => {
   // ROUTER
   const router = useRouter()
 
   // STATES
-  const [discountEmail, setDiscountEmail] = useState(false)
-  const [productsInterested, setProductsInterested] = useState(false)
+  const [discountEmail, setDiscountEmail] = useState(discountEmails)
+  const [productsInterested, setProductsInterested] = useState(productsMayInterested)
+
+
+  // Save changes
+  const handleSaveChanges = async () => {
+    try {
+      await axios.post(`${baseURL}/user/change-user-notifications`,
+        {
+          discountEmails: discountEmail,
+          productsMayInterested: productsInterested,
+        },
+        { headers: { "Authorization": `Bearer ${token}` } })
+      toast.success("Changes saved.")
+      setTimeout(() => {
+        router.reload()
+      }, 1500)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <Layout1>
@@ -74,6 +96,14 @@ const UserNotifications = () => {
                   </Col>
                 </Row>
               </div>
+
+              <Row>
+                <Col lg="8" className='mb-2'>
+                  <div className='d-flex justify-content-end mt-3'>
+                    <Button className='btn btn-success' onClick={() => handleSaveChanges()}>Save changes</Button>
+                  </div>
+                </Col>
+              </Row>
             </Col>
 
           </Row>
@@ -94,9 +124,15 @@ export async function getServerSideProps({ locale, query, req }) {
       }
     }
   }
+  // fetch user data from server
+  const { data } = await axios.get(`${baseURL}/user/get-user-info`, { headers: { "Authorization": `Bearer ${req.cookies.token}` } })
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common']))
+      ...(await serverSideTranslations(locale, ['common'])),
+      discountEmails: data.notifications.discountEmails,
+      productsMayInterested: data.notifications.productsMayInterested,
+      token: req.cookies.token
     },
   }
 }

@@ -8,10 +8,12 @@ import { Col, Container, Row, Button, Table } from 'reactstrap';
 import Link from 'next/link';
 import LeftNavigation from '../../Components/Pages/UserDashboard/LeftNavigation';
 import { useRouter } from 'next/router';
+import { baseURL } from '../../constants/baseurl';
+import axios from 'axios';
 
 
 
-const UserOrders = () => {
+const UserOrders = ({ orderData }) => {
   // ROUTER
   const router = useRouter()
 
@@ -36,31 +38,50 @@ const UserOrders = () => {
               </div>
 
               {/* Here will be looped */}
-              <Container className='p-2' style={{ border: "1px solid #ddd", borderRadius: "10px" }}>
-                <div className='d-flex justify-content-between align-items-center'>
-                  <div>
-                    <p>Order id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;#1234</p>
-                    <p>Order Total &nbsp;&nbsp;: &nbsp;$ 125</p>
-                    <p>Order Date &nbsp; : &nbsp; 11-11-2023</p>
+              {orderData.map(order => {
+                return (
+                  <Container key={order._id} className='p-2' style={{ border: "1px solid #ddd", borderRadius: "10px" }}>
+                    <div className='d-flex justify-content-between align-items-center'>
+                      <div>
+                        <p>Order id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;#{order.invoice}</p>
+                        <p>Order Total &nbsp;&nbsp;: &nbsp;$ {order.total}</p>
+                        <p>Order Date &nbsp; : &nbsp; 11-11-2023</p>
+                      </div>
+                      <Link href={'/page/cart'} className='btn btn-solid-default btn-sm fw-bold'>
+                        View Order
+                      </Link>
+                    </div>
+                    <hr />
+                    {order.cart.map((individualProduct) => {
+                      return (
+                        <Link href={individualProduct.product.slug}>
+                          <div className='d-flex mt-2' key={individualProduct._id}>
+                            <img src={individualProduct.product.image[0]} width={120} height={100} style={{ borderRadius: "5px" }} />
+                            <div style={{ marginLeft: "20px", color: "black" }}>
+                              <p>Product</p>
+                              <p>{individualProduct.product.title}</p>
+                            </div>
+                            <div style={{ marginLeft: "20px", color: "black" }}>
+                              <p>Quantity</p>
+                              <p>{individualProduct.quantity} pcs</p>
+                            </div>
+                          </div>
+                        </Link>
+                      )
+                    })}
+                  </Container>
+                )
+              })}
+              {orderData.length === 0 &&
+                <>
+                  <div className='d-flex flex-column justify-content-center align-items-center'>
+                    <h3>You have no orders.</h3>
+                    <Link href="/">
+                      <Button className='btn btn-success mt-3'>Go to shopping</Button>
+                    </Link>
                   </div>
-                  <Link href={'/page/cart'} className='btn btn-solid-default btn-sm fw-bold'>
-                    View Order
-                  </Link>
-                </div>
-                <hr />
-
-                <div className='d-flex'>
-                  <img src='/assets/images/fashion/product/front/1.jpg' width={100} height={100} style={{ borderRadius: "5px" }} />
-                  <div style={{ marginLeft: "20px" }}>
-                    <p>Product</p>
-                    <p>Some Good product</p>
-                  </div>
-                  <div style={{ marginLeft: "20px" }}>
-                    <p>Quantity</p>
-                    <p>1 pcs</p>
-                  </div>
-                </div>
-              </Container>
+                </>
+              }
 
             </Col>
 
@@ -82,9 +103,13 @@ export async function getServerSideProps({ locale, query, req }) {
       }
     }
   }
+  // fetch user data from server
+  const { data } = await axios.get(`${baseURL}/user/get-user-orders`, { headers: { "Authorization": `Bearer ${req.cookies.token}` } })
+  console.log(data.order[0].cart)
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common']))
+      ...(await serverSideTranslations(locale, ['common'])),
+      orderData: data.order
     },
   }
 }
